@@ -23,6 +23,8 @@ class Karyawan extends Authenticatable
         'nama_lengkap',
         'gender',
         'jabatan',
+        'kode_dept',
+        'foto',
         'no_hp',
         'password',
     ];

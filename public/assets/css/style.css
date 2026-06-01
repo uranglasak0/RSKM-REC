@@ -27,7 +27,7 @@ body {
 
 a {
   transition: 0.2s all;
-  color: #1e74fd;
+  color: #FF520D;
   outline: 0 !important;
 }
 
@@ -35,7 +35,7 @@ a:hover,
 a:active,
 a:focus {
   outline: 0 !important;
-  color: #1e74fd;
+  color: #FF520D;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ button:focus {
   right: 0;
   width: 100%;
   z-index: 99999;
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 .appHeader.no-border {
@@ -231,11 +231,11 @@ button:focus {
 }
 
 .appHeader.scrolled.bg-primary .headerButton {
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .appHeader.scrolled.bg-primary.is-active {
-  background: #1e74fd !important;
+  background: #FF520D !important;
 }
 
 .appHeader.scrolled.bg-primary.is-active .headerButton {
@@ -427,7 +427,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   border-radius: 200px;
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 .appBottomMenu .item .action-button.large {
@@ -464,7 +464,7 @@ button:focus {
 .appBottomMenu .item.active i.icon,
 .appBottomMenu .item.active ion-icon,
 .appBottomMenu .item.active strong {
-  color: #1e74fd !important;
+  color: #FF520D !important;
   font-weight: 500;
 }
 
@@ -613,7 +613,7 @@ button:focus {
   display: flex;
   align-items: center;
   position: relative;
-  background: #1e74fd;
+  background: #FF520D;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
   position: fixed;
   z-index: 100;
@@ -624,7 +624,7 @@ button:focus {
 }
 
 .profileBox:before {
-  background: #1e74fd;
+  background: #FF520D;
   content: "";
   height: env(safe-area-inset-top);
   display: block;
@@ -719,7 +719,7 @@ button:focus {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0px 16px 10px 16px;
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 .action-group .action-button {
@@ -1386,7 +1386,7 @@ b {
 }
 
 code {
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 figure.codebox {
@@ -1573,7 +1573,7 @@ i.icon {
 
 .badge-primary,
 a.badge-primary {
-  background: #1e74fd !important;
+  background: #FF520D !important;
 }
 
 .badge-secondary,
@@ -2127,7 +2127,7 @@ a.badge-dark {
   display: block;
   font-size: 15px;
   font-weight: 500;
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .btn {
@@ -2226,8 +2226,8 @@ a.badge-dark {
 }
 
 .btn-primary {
-  background: #1e74fd !important;
-  border-color: #1e74fd !important;
+  background: #FF520D !important;
+  border-color: #FF520D !important;
   color: #ffffff !important;
 }
 
@@ -2241,8 +2241,8 @@ a.badge-dark {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-  background: #1e74fd;
-  border-color: #1e74fd;
+  background: #FF520D;
+  border-color: #FF520D;
   opacity: 0.5;
 }
 
@@ -2332,7 +2332,7 @@ a.badge-dark {
 }
 
 .btn-link {
-  color: #1e74fd !important;
+  color: #FF520D !important;
 }
 
 .btn-info {
@@ -2401,29 +2401,29 @@ a.badge-dark {
 
 .btn-outline-primary {
   background: transparent;
-  border-color: #1e74fd;
+  border-color: #FF520D;
   border-width: 1px;
-  color: #1e74fd;
+  color: #FF520D;
   transition: 0.2s all;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active {
   background: rgba(30, 116, 253, 0.15) !important;
-  border-color: #1e74fd !important;
-  color: #1e74fd !important;
+  border-color: #FF520D !important;
+  color: #FF520D !important;
 }
 
 .btn-outline-primary.active {
-  background: #1e74fd !important;
+  background: #FF520D !important;
   color: #fff !important;
-  border-color: #1e74fd !important;
+  border-color: #FF520D !important;
 }
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #1e74fd !important;
-  border-color: #1e74fd !important;
+  color: #FF520D !important;
+  border-color: #FF520D !important;
   background: transparent !important;
   opacity: 0.5;
 }
@@ -2609,7 +2609,7 @@ a.badge-dark {
 .btn-text-primary {
   background: transparent;
   border-color: transparent;
-  color: #1e74fd !important;
+  color: #FF520D !important;
   transition: 0.2s all;
 }
 
@@ -2621,13 +2621,13 @@ a.badge-dark {
 .btn-text-primary.active {
   background: rgba(30, 116, 253, 0.15) !important;
   border-color: transparent !important;
-  color: #1e74fd !important;
+  color: #FF520D !important;
 }
 
 .btn-text-primary.disabled,
 .btn-text-primary:disabled {
-  color: #1e74fd !important;
-  border-color: #1e74fd !important;
+  color: #FF520D !important;
+  border-color: #FF520D !important;
   background: transparent !important;
   opacity: 0.5;
 }
@@ -3240,7 +3240,7 @@ a.badge-dark {
 }
 
 .action-button-list > li .btn.text-primary {
-  color: #1e74fd !important;
+  color: #FF520D !important;
 }
 
 .action-button-list > li .btn.text-secondary {
@@ -3428,7 +3428,7 @@ a.badge-dark {
   line-height: 1em;
   margin-top: 30px;
   margin-bottom: -10px;
-  color: #1e74fd;
+  color: #FF520D;
   text-align: center;
 }
 
@@ -3528,7 +3528,7 @@ a.badge-dark {
 }
 
 .panelbox .modal-dialog .modal-content .modal-header .panel-close {
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .panelbox .modal-dialog .modal-content .modal-header .panel-close i.icon,
@@ -3635,7 +3635,7 @@ a.badge-dark {
 }
 
 .bg-primary {
-  background: #1e74fd !important;
+  background: #FF520D !important;
   color: #fff;
 }
 
@@ -3674,7 +3674,7 @@ a.badge-dark {
 }
 
 a.bg-primary {
-  background: #1e74fd !important;
+  background: #FF520D !important;
   color: #fff !important;
 }
 
@@ -3754,7 +3754,7 @@ a.bg-dark:active {
 
 .text-primary,
 a.text-primary {
-  color: #1e74fd !important;
+  color: #FF520D !important;
 }
 
 .text-secondary,
@@ -3793,7 +3793,7 @@ a.text-dark {
 }
 
 .border-primary {
-  border-color: #1e74fd !important;
+  border-color: #FF520D !important;
 }
 
 .border-secondary {
@@ -3853,9 +3853,9 @@ a.text-dark {
 }
 
 .alert-primary {
-  background: #1e74fd;
+  background: #FF520D;
   color: #fff;
-  border: 1px solid #1e74fd;
+  border: 1px solid #FF520D;
 }
 
 .alert-primary a {
@@ -3873,21 +3873,21 @@ a.text-dark {
 
 .alert-outline-primary {
   background: transparent;
-  color: #1e74fd;
-  border: 1px solid #1e74fd;
+  color: #FF520D;
+  border: 1px solid #FF520D;
 }
 
 .alert-outline-primary a {
-  color: #1e74fd !important;
+  color: #FF520D !important;
   text-decoration: underline !important;
 }
 
 .alert-outline-primary .alert-title {
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .alert-outline-primary .close {
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .alert-secondary {
@@ -4209,7 +4209,7 @@ textarea,
 }
 
 .form-group .input-wrapper.active .label {
-  color: #1e74fd !important;
+  color: #FF520D !important;
 }
 
 .form-group.basic {
@@ -4231,8 +4231,8 @@ textarea,
 
 .form-group.basic .form-control:focus,
 .form-group.basic .custom-select:focus {
-  border-bottom-color: #1e74fd;
-  box-shadow: inset 0 -1px 0 0 #1e74fd;
+  border-bottom-color: #FF520D;
+  box-shadow: inset 0 -1px 0 0 #FF520D;
 }
 
 .form-group.basic textarea.form-control {
@@ -4271,7 +4271,7 @@ textarea,
 }
 
 .form-group.boxed .form-control:focus {
-  border-color: #1e74fd;
+  border-color: #FF520D;
 }
 
 .form-group.boxed textarea.form-control {
@@ -4514,9 +4514,9 @@ textarea,
 }
 
 .nav-tabs.lined .nav-item .nav-link.active {
-  color: #1e74fd;
+  color: #FF520D;
   background: transparent;
-  border-bottom-color: #1e74fd !important;
+  border-bottom-color: #FF520D !important;
 }
 
 .nav-tabs.iconed i.icon,
@@ -4554,8 +4554,8 @@ textarea,
 }
 
 .custom-control .custom-control-input:checked ~ .custom-control-label:before {
-  background: #1e74fd !important;
-  border-color: #1e74fd !important;
+  background: #FF520D !important;
+  border-color: #FF520D !important;
 }
 
 .custom-control .custom-control-input:checked ~ .custom-control-label:after {
@@ -4727,7 +4727,7 @@ textarea,
 }
 
 .message-item.user .bubble {
-  background: #1e74fd;
+  background: #FF520D;
   color: #fff;
   border-radius: 16px 16px 0 16px;
 }
@@ -4776,7 +4776,7 @@ textarea,
 }
 
 .progress-bar {
-  background: #1e74fd;
+  background: #FF520D;
   height: 14px;
   line-height: 1em;
   display: flex;
@@ -4892,7 +4892,7 @@ textarea,
 }
 
 .chip-primary {
-  background: #1e74fd !important;
+  background: #FF520D !important;
   color: #fff !important;
 }
 
@@ -4902,8 +4902,8 @@ textarea,
 
 .chip-primary.chip-outline {
   background: transparent !important;
-  color: #1e74fd !important;
-  box-shadow: inset 0 0 0 1px #1e74fd !important;
+  color: #FF520D !important;
+  box-shadow: inset 0 0 0 1px #FF520D !important;
 }
 
 .chip-danger {
@@ -5344,7 +5344,7 @@ textarea,
 }
 
 .form-wizard-section .button-item.active strong {
-  background: #1e74fd;
+  background: #FF520D;
   color: #fff;
 }
 
@@ -5464,7 +5464,7 @@ textarea,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1e74fd;
+  background: #FF520D;
   border-radius: 100%;
   color: #fff !important;
 }
@@ -5478,7 +5478,7 @@ textarea,
 
 .fab-button .fab:hover,
 .fab-button .fab:active {
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 .fab-button.text .fab {
@@ -5517,7 +5517,7 @@ textarea,
 
 .fab-button .dropdown-menu .dropdown-item {
   padding: 0;
-  background: #1e74fd;
+  background: #FF520D;
   width: 42px;
   height: 42px;
   display: flex !important;
@@ -5531,7 +5531,7 @@ textarea,
 
 .fab-button .dropdown-menu .dropdown-item:hover,
 .fab-button .dropdown-menu .dropdown-item:active {
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 .fab-button .dropdown-menu .dropdown-item i.icon,
@@ -5727,7 +5727,7 @@ textarea,
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1e74fd !important;
+  color: #FF520D !important;
   font-size: 13px;
   border-right: 1px solid #e1e1e1;
   padding: 16px 6px;
@@ -6135,7 +6135,7 @@ textarea,
 }
 
 .pagination .page-item .page-link {
-  background: #1e74fd;
+  background: #FF520D;
   border: 0;
   color: #fff;
   box-shadow: 0 !important;
@@ -6559,7 +6559,7 @@ textarea,
 
 .profile-info .link {
   margin-top: 4px;
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .profile-stats {
@@ -6607,9 +6607,9 @@ textarea,
   font-size: 24px;
   align-items: center;
   justify-content: center;
-  background: #1e74fd;
+  background: #FF520D;
   position: relative;
-  border: 2px solid #1e74fd;
+  border: 2px solid #FF520D;
 }
 
 .stepper .stepper-button:last-child {
@@ -6624,10 +6624,10 @@ textarea,
   box-shadow: none !important;
   background: transparent;
   text-align: center;
-  border: 2px solid #1e74fd;
+  border: 2px solid #FF520D;
   font-size: 17px;
   font-weight: 500;
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .stepper-sm {
@@ -6662,13 +6662,13 @@ textarea,
 }
 
 .stepper-primary .stepper-button {
-  background: #1e74fd;
-  border-color: #1e74fd;
+  background: #FF520D;
+  border-color: #FF520D;
 }
 
 .stepper-primary .form-control {
-  border-color: #1e74fd;
-  color: #1e74fd;
+  border-color: #FF520D;
+  color: #FF520D;
 }
 
 .stepper-secondary .stepper-button {
@@ -6733,8 +6733,8 @@ textarea,
 
 .stepper-outline-primary .stepper-button {
   background: transparent;
-  color: #1e74fd;
-  border-color: #1e74fd;
+  color: #FF520D;
+  border-color: #FF520D;
 }
 
 .stepper-outline-primary .stepper-button:first-child {
@@ -6746,8 +6746,8 @@ textarea,
 }
 
 .stepper-outline-primary .form-control {
-  border-color: #1e74fd;
-  color: #1e74fd;
+  border-color: #FF520D;
+  color: #FF520D;
 }
 
 .stepper-outline-secondary .stepper-button {
@@ -6912,7 +6912,7 @@ textarea,
 
 .product-detail-header .detail-footer .price .current-price {
   font-size: 24px;
-  color: #1e74fd;
+  color: #FF520D;
   font-weight: 500;
 }
 
@@ -6951,7 +6951,7 @@ textarea,
 .cart-item .in .text .price {
   font-weight: 500;
   font-size: 15px;
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 .cart-item .cart-item-footer {
@@ -7536,7 +7536,7 @@ body.dark-mode-active .form-wizard-section .button-item p {
 }
 
 body.dark-mode-active .form-wizard-section .button-item.active strong {
-  background: #1e74fd;
+  background: #FF520D;
   color: #fff;
 }
 
@@ -7601,7 +7601,7 @@ body.dark-mode-active .message-item .footer {
 }
 
 body.dark-mode-active .message-item.user .bubble {
-  background: #1e74fd;
+  background: #FF520D;
 }
 
 body.dark-mode-active .chatFooter {
@@ -7921,7 +7921,7 @@ body.dark-mode-active .nav-tabs.lined .nav-item .nav-link {
 
 body.dark-mode-active .nav-tabs.lined .nav-item .nav-link.active {
   background: transparent;
-  color: #1e74fd;
+  color: #FF520D;
 }
 
 body.dark-mode-active .blog-post .post-header {
@@ -7996,7 +7996,7 @@ body.dark-mode-active .cart-item .cart-item-footer {
 
 #user-section {
   height: 180px;
-  background-color: #092c9f;
+  background-color: #FF520D;
   padding: 20px;
 }
 
@@ -8089,4 +8089,40 @@ body.dark-mode-active .cart-item .cart-item-footer {
     background-color: #FF520D;
     color: white;
     border: none;
+}
+
+/* Memaksa semua class warna ikon di menu-section menjadi orange */
+#menu-section .item-menu .menu-icon a.green,
+#menu-section .item-menu .menu-icon a.danger,
+#menu-section .item-menu .menu-icon a.warning,
+#menu-section .item-menu .menu-icon a.orange {
+    color: #FF520D !important;
+}
+
+/* Memaksa ikon di bagian rekap (Hadir, Izin, dkk) menjadi orange */
+#rekappresensi ion-icon.text-primary,
+#rekappresensi ion-icon.text-success,
+#rekappresensi ion-icon.text-warning,
+#rekappresensi ion-icon.text-danger {
+    color: #FF520D !important;
+}
+
+/* --- FIX TOMBOL ABSEN & UPDATE (HOVER/FOCUS/ACTIVE) --- */
+
+/* 1. Mengincar semua tombol primary (Absen Masuk & Update Profile) */
+.btn-primary, 
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #FF520D !important; /* Warna Orange utama */
+    border-color: #FF520D !important;
+    color: #ffffff !important;
+    box-shadow: none !important; /* Menghilangkan bayangan biru saat diklik */
+}
+
+/* 2. Efek sedikit gelap saat kursor diletakkan (Hover) agar terlihat interaktif */
+.btn-primary:hover {
+    background-color: #e34a0b !important; /* Orange yang agak gelap sedikit */
+    filter: brightness(90%);
 }

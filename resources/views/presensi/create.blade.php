@@ -98,14 +98,14 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
         var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
-        var circle = L.circle([-0.9477627932817836, 100.3653570927499], {
+        var circle = L.circle([-0.927267682069316, 100.35680311316776], {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.5,
             radius: 40
         }).addTo(map);
     }
-    //(-0.9477627932817836, 100.3653570927499 - REC) (-0.9481435706460654, 100.36506879609117 - parkiran)
+    //(-0.9477627932817836, 100.3653570927499 - REC) (-0.9481435706460654, 100.36506879609117 - parkiran) (-0.9226262070500596, 100.36013623143776 - kampus) (-0.927267682069316, 100.35680311316776 - rumah)
     function errorCallback(){
         
     }

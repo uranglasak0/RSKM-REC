@@ -28,10 +28,10 @@ class AuthController extends Controller
         if (Auth::guard('karyawan')->check()) {
             Auth::guard('karyawan')->logout();
             return redirect('/');
-        } else {
-
         }
+
     }
+    
 
     // Tampilkan halaman register
     public function showRegisterForm()
@@ -139,5 +139,20 @@ class AuthController extends Controller
 
     }
 
+    public function proseslogoutadmin(){
+            if (Auth::guard('user')->check()) {
+                Auth::guard('user')->logout();
+                return redirect('/panel');
+            }
+    }
+    
+    public function prosesloginadmin(Request $request){
+            if (Auth::guard('user')->attempt(['email' => $request->email, 'password' => $request->password])) {
+                return redirect('/panel/dashboardadmin');
+            } else {
+                return redirect('/panel')->with(['warning' => 'Email atau Password salah!']);
+            }
+    }
+        
 
 }

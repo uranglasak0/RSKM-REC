@@ -26,8 +26,8 @@ class PresensiController extends Controller
         $nik = Auth::guard('karyawan')->user()->nik;
         $tgl_presensi = date('Y-m-d');
         $jam = date('H:i:s');
-        $latidutekantor = -0.9477627932817836; //(-0.9477627932817836, 100.3653570927499 - REC) (-0.9481435706460654, 100.36506879609117 - parkiran)
-        $longitudekantor = 100.3653570927499;
+        $latidutekantor = -0.927267682069316; //(-0.9477627932817836, 100.3653570927499 - REC) (-0.9481435706460654, 100.36506879609117 - parkiran) (-0.9226262070500596, 100.36013623143776 - kampus) (-0.927267682069316, 100.35680311316776 - rumah)
+        $longitudekantor = 100.35680311316776;
         $lokasi = $request->lokasi;
         // dd($lokasi);
         $lokasiuser = explode(",", $lokasi);
@@ -193,7 +193,9 @@ class PresensiController extends Controller
 
     public function izin()
     {
-        return view('presensi.izin');
+        $nik = Auth::guard('karyawan')->user()->nik;
+        $dataizin = DB::table('pengajuan_izin')->where('nik', $nik)->get();
+        return view('presensi.izin', compact('dataizin'));
     }
 
     public function buatizin()

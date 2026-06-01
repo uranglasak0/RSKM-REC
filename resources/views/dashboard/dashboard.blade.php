@@ -19,7 +19,7 @@
             </div>
             <form id="logoutForm" action="/logout" method="POST" style="position: absolute; top: 52px; right: -10px;">
                 @csrf
-                <button type="button" style="background: none; border: none; cursor: pointer;" title="Logout">
+                <button type="submit" style="background: none; border: none; cursor: pointer;" title="Logout">
                     <ion-icon name="exit-outline" style="font-size: 30px; color: white;"></ion-icon>
                 </button>
                 <span
@@ -34,7 +34,7 @@
                 <div class="list-menu">
                     <div class="item-menu text-center">
                         <div class="menu-icon">
-                            <a href="" class="green" style="font-size: 40px;">
+                            <a href="/editprofile" class="green" style="font-size: 40px;">
                                 <ion-icon name="person-sharp"></ion-icon>
                             </a>
                         </div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="item-menu text-center">
                         <div class="menu-icon">
-                            <a href="" class="danger" style="font-size: 40px;">
+                            <a href="/presensi/izin" class="danger" style="font-size: 40px;">
                                 <ion-icon name="calendar-number"></ion-icon>
                             </a>
                         </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="item-menu text-center">
                         <div class="menu-icon">
-                            <a href="" class="warning" style="font-size: 40px;">
+                            <a href="/presensi/histori" class="warning" style="font-size: 40px;">
                                 <ion-icon name="document-text"></ion-icon>
                             </a>
                         </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="item-menu text-center">
                         <div class="menu-icon">
-                            <a href="" class="orange" style="font-size: 40px;">
+                            <a href="/dashboard" class="orange" style="font-size: 40px;">
                                 <ion-icon name="location"></ion-icon>
                             </a>
                         </div>
@@ -145,7 +145,7 @@
                     <div class="card">
                         <div class="card-body text-center" style="padding: 12px 12px !important; line-height:0.8rem">
                             <span class="badge bg-danger"
-                                style="position: absolute; top:3px; right:10px; font-size:0.6rem; z-index:999">0</span>
+                                style="position: absolute; top:3px; right:10px; font-size:0.6rem; z-index:999">{{ $rekapizin->jmlizin }}</span>
                             <ion-icon name="newspaper-outline" style="font-size: 1.6rem;"
                                 class="text-success mb-1"></ion-icon>
                             <br>
@@ -157,7 +157,7 @@
                     <div class="card">
                         <div class="card-body text-center" style="padding: 12px 12px !important; line-height:0.8rem">
                             <span class="badge bg-danger"
-                                style="position: absolute; top:3px; right:10px; font-size:0.6rem; z-index:999">0</span>
+                                style="position: absolute; top:3px; right:10px; font-size:0.6rem; z-index:999">{{ $rekapizin->jmlsakit }}</span>
                             <ion-icon name="medkit-outline" style="font-size: 1.6rem;"
                                 class="text-warning mb-1"></ion-icon>
                             <br>
@@ -244,14 +244,14 @@
     </div>
 @endsection
 
-@push('script')
+{{-- @push('script')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.getElementById('logoutForm').addEventListener('submit', function(e) {
             e.preventDefault(); // stop submit
 
             Swal.fire({
-                title: 'Apakah kamu yakin untuk logout?',
+                title: 'Apakah kamu yakin untuk Logout?',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: '<span class="btn btn-primary m-0">Ya</span>',
@@ -261,6 +261,34 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     this.submit(); // submit form kalau klik Ya
+                }
+            });
+        });
+    </script>
+@endpush --}}
+
+@push('script')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById('logoutForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            Swal.fire({
+                title: 'Konfirmasi Logout',
+                text: "Apakah kamu yakin ingin keluar?",
+                icon: 'warning',
+                iconColor: '#FF520D',
+                showCancelButton: true,
+                // Kita kunci posisinya manual:
+                confirmButtonText: 'Tidak', 
+                cancelButtonText: 'Ya',
+                confirmButtonColor: '#d33',    // Merah untuk Tidak
+                cancelButtonColor: '#FF520D', // Oranye RSKM untuk Ya
+                reverseButtons: true,         // Jangan dibalik lagi
+            }).then((result) => {
+                // Jika result.dismiss karena klik tombol 'Ya' (yang aslinya tombol cancel)
+                if (result.dismiss === Swal.DismissReason.cancel) {
+                    this.submit(); 
                 }
             });
         });

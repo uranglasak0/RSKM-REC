@@ -17,22 +17,26 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/dashboard'; // Ubah sesuai kebutuhan
+    public const HOMEADMIN = '/panel/dashboardadmin'; // Ubah sesuai kebutuhan
 
     /**
      * Define your route model bindings, pattern filters, etc.
      */
     public function boot(): void
-    {
-        $this->configureRateLimiting();
-        $this->routes(function () {
-            Route::middleware('web')
-                ->prefix('api')
-                ->group(base_path('routes/api.php'));
+{
+    $this->configureRateLimiting();
+    $this->routes(function () {
+        // 1. API pakai middleware 'api'
+        Route::middleware('api')
+            ->prefix('api')
+            ->group(base_path('routes/api.php'));
 
-            Route::middleware('api')
-                ->group(base_path('routes/web.php'));
-        });
-    }
+        // 2. WEB WAJIB pakai middleware 'web' 
+        // (Ini yang bikin Cookies/Session kamu AWET)
+        Route::middleware('web')
+            ->group(base_path('routes/web.php'));
+    });
+}
 
     protected function configureRateLimiting()
     {
